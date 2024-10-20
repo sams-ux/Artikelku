@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Entry Cards - Right Left Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+        .card {
+            background: #fff;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            margin-bottom: 20px;
+            transition: transform 0.2s;
+            display: flex;
+            flex-direction: column;
+        }
+        .card:hover {
+            transform: scale(1.02);
+        }
+        .card h3 {
+            margin: 0 0 10px;
+        }
+        .card p {
+            margin: 5px 0;
+        }
+        .card .date {
+            font-size: 0.9em;
+            color: #666;
+        }
+        .left {
+            align-items: flex-start;
+        }
+        .right {
+            align-items: flex-end;
+        }
+        .card-content {
+            width: 100%;
+        }
+        .card-content img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="card left">
+        <div class="card-content">
+            <h3>Judul Entri Blog Pertama</h3>
+            <p class="date">Tanggal: 17 Oktober 2024</p>
+            <img src="https://via.placeholder.com/150" alt="Gambar Entri Blog">
+            <p>Ini adalah ringkasan dari entri blog pertama saya. Saya akan membahas topik yang menarik dan memberikan wawasan yang bermanfaat.</p>
+            <a href="#">Baca Selengkapnya</a>
+        </div>
+    </div>
+    <div class="card right">
+        <div class="card-content">
+            <h3>Judul Entri Blog Kedua</h3>
+            <p class="date">Tanggal: 18 Oktober 2024</p>
+            <img src="https://via.placeholder.com/150" alt="Gambar Entri Blog">
+            <p>Di entri ini, kita akan menjelajahi tema yang berbeda dan memberikan pandangan yang mendalam tentang isu yang relevan saat ini.</p>
+            <a href="#">Baca Selengkapnya</a>
+        </div>
+    </div>
+    <div class="card left">
+        <div class="card-content">
+            <h3>Judul Entri Blog Ketiga</h3>
+            <p class="date">Tanggal: 19 Oktober 2024</p>
+            <img src="https://via.placeholder.com/150" alt="Gambar Entri Blog">
+            <p>Entri ini membahas tentang pengalaman saya dalam mengelola waktu dan meningkatkan produktivitas.</p>
+            <a href="#">Baca Selengkapnya</a>
+        </div>
+    </div>
+    <div class="card right">
+        <div class="card-content">
+            <h3>Judul Entri Blog Keempat</h3>
+            <p class="date">Tanggal: 20 Oktober 2024</p>
+            <img src="https://via.placeholder.com/150" alt="Gambar Entri Blog">
+            <p>Dalam entri ini, saya akan berbagi tips untuk belajar secara efektif dan memanfaatkan sumber daya yang ada.</p>
+            <a href="#">Baca Selengkapnya</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
